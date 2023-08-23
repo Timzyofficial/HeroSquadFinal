@@ -5,12 +5,23 @@ public class Hero {
     private String name;
     private int age;
 
+    private int squadId;
+
     public Hero(String name, int age, String power, String weakness) {
         this.name = name;
         this.age = age;
         this.power = power;
         this.weakness = weakness;
         id = nextId ++;
+        squadId = -1;
+    }
+
+    public int getSquadId() {
+        return squadId;
+    }
+
+    public void setSquadId(int squadId) {
+        this.squadId = squadId;
     }
 
     private String power;
